@@ -74,6 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const contactForm = document.getElementById('contact-form');
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
+    // Add form submission logic here
     alert('Message sent successfully!');
     contactForm.reset();
   });
@@ -87,22 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
-
-  // Update auth buttons to link to login/signup pages
-  const loginBtn = document.querySelector('.login-btn');
-  const signupBtn = document.querySelector('.signup-btn');
-  
-  if (loginBtn) {
-    loginBtn.addEventListener('click', () => {
-      window.location.href = 'login.html';
-    });
-  }
-  
-  if (signupBtn) {
-    signupBtn.addEventListener('click', () => {
-      window.location.href = 'signup.html';
-    });
-  }
 });
 
 // Navbar scroll effect
