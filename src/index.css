@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #6c5ce7;
+  --secondary-color: #a29bfe;
+  --accent-color: #00b894;
+  --background-color: #2d3436;
+  --text-color: #dfe6e9;
+  --card-background: #353b48;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+  min-height: 100vh;
+}
